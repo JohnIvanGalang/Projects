@@ -1,0 +1,149 @@
+#main-body{
+    background: #fff34a;
+}
+
+
+/*Navigation*/
+#navigation #title{
+    font-family: Agbalumo;
+    color: rgb(44, 14, 14);
+    font-size: 150%;
+
+    animation: SlideRight 1s ease-out;
+}
+#navigation #navbarNav a{
+    font-family: Lilita One;
+    color: rgb(44, 14, 14);
+    font-size: 140%;
+
+    animation: SlideLeft 0.8s ease-out;
+}
+#navigation #navbarNav a:hover{
+    color: #d80000;
+    transition: 100ms;
+    transform: scale(105%);
+}
+
+
+/*Section One(1): Home*/
+#home #Welcome-Text h1{
+    font-family: Agbalumo;
+    color: #d80000;
+    font-size: 400%;
+    font-weight: bold;
+
+    animation: SlideRight 1.4s ease-out;
+}
+#home #Welcome-Text p{
+    font-size: larger;
+    font-family: Lilita One;
+
+    animation: SlideUp 1.4s ease-out;
+}
+#home .chicken-image{
+    height: 120%;
+    width: 120%;
+
+    animation: SlideUp 1.5s ease-out;;
+}
+
+
+/*Section Two(2): About*/
+#about-us h1{
+    font-size: 300%;
+    font-family: Lilita One;
+
+    animation: SlideUp 1s ease-out;
+}
+#about-us p{
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(27, 15, 0);
+    font-weight: bold;
+    font-size: larger;
+
+    animation: SlideUp 2s ease-out;
+}
+
+
+/*Section Three(3): Menu*/
+#menu h1{
+    font-size: 300%;
+    font-family: Lilita One;
+}
+#menu .container{
+    padding-top: 1%;
+    padding-bottom: 1%;
+    background: linear-gradient(45deg, rgb(236, 236, 236), rgba(235, 235, 235, 0.979));
+    backdrop-filter: blur(100px);
+    border-radius: 4cap;
+    border: 1px solid rgba(124, 121, 121, 0.2);
+    box-shadow: 2px 8px 32px 10px rgba(0, 0, 0, 0.3);
+}
+#menu .container h3{
+    color: #d80000;
+    font-family: Agbalumo;
+    font-size: 300%;
+}
+#menu .container p{
+    font-size: larger;
+    font-weight: bold;
+}
+button{
+    outline: solid rgb(255, 217, 0) 1px;
+    border-radius: 3cap;
+    border: 1px solid rgba(124, 121, 121, 0.2);
+}
+button:hover{
+    color: #ff0000;
+}
+
+
+
+/*Section Four(4): Contacts*/
+#contact-us{
+    padding: 5%;
+    border-top: 1px solid black;
+    margin-top: 6%;
+}
+h5{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+/*Animations*/
+@keyframes SlideRight {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes SlideUp {
+    0% {
+        transform: translateY(500%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes SlideLeft{
+    0%{
+        transform: translateX(200%);
+        opacity: 0;
+    }
+    100%{
+        transform: translatX(0);
+        opacity: 1;
+    }
+}
